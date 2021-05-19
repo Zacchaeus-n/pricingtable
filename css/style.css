@@ -50,8 +50,26 @@ body{
     transition: .4s linear;
 }
 
+.wrap__prx__card__img{
+   background-color: aliceblue;
+   border-top-left-radius: 50px;
+   border-top-right-radius: 50px;
+    
+}
+.wrap__prx__card__img img{
+    width: 150px;
+    box-shadow: 0 0.4em 0.4em 0 rgba(0, 0, 0, 0.075);
+    border-radius: 50%;
+}
+.wrap__prx__card__img img:hover{
+    transform: translateY(2%);
+    transition: .4s linear;
+}
+
 .wrap_prx_card:hover{
     background-color: tomato;
+    transform: translate(2%);
+    transition: .4s linear;
 }
 
 .wrap__prx__card__price{
@@ -82,6 +100,7 @@ button:hover{
    background-color: coral;
    border-color: #fff;
    cursor: pointer;
+   transition: .4s linear;
 
 }
 
