@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: url("/images/ungaro.jpg");
+    background-color: teal;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px, 100%);
+}
+
+.wrap_prx_card{
+    flex: 1;
+    max-width: 360px;
+    background-color: aliceblue;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #ccc;
+    transition: .3s linear;
+    border-radius: 10px;
+
+}
+
+.wrap_prx__card__title{
+    background-color: tomato;
+    display: inline-block;
+    color: aliceblue;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+}
+
+.wrap_prx_card:hover{
+    background-color: tomato;
+}
+
+.wrap__prx__card__price{
+    font-size: 70px;
+    color: chocolate;
+    margin: 40px 0;
+    transition: .2s linear;
+}
+
+.wrap__prx__card__price sub, .wrap__prx__card__price span{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+ul li{
+    padding: 10px;
+}
+
+button{
+    margin: 20px 0;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    
+}
+
+button:hover{
+   background-color: coral;
+   border-color: #fff;
+   cursor: pointer;
+
+}
+
+@media screen and (max-width:1100px) {
+    .wrap_prx_card{
+        flex: 50%;
+    }
+}
