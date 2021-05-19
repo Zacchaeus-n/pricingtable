@@ -8,8 +8,10 @@
 }
 
 body{
-    background-image: url("/images/ungaro.jpg");
     background-color: teal;
+    background-image: url("/images/ungaro.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;    
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -32,6 +34,7 @@ body{
     color: #ccc;
     transition: .3s linear;
     border-radius: 10px;
+    box-shadow: 0 0.4em 0.4em 0 rgba(0, 0, 0, 0.075);
 
 }
 
